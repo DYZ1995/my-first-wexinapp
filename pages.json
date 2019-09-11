@@ -1,0 +1,29 @@
+// 用于设置应用的状态栏、导航条、标题、窗口背景色等
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages ,,,,,通过pages节点配置应有由那些页面组成，pages节点接受一个数组，数组每个项都是一个对象
+		{
+			"path": "pages/index/index",	//配置页面路径
+			"style": { //设置每个页面的状态栏、导航条、标题、窗口背景色
+				"navigationBarTitleText": "uni-app"	//配置页面窗口表现
+			}
+		}
+	    ,{
+            "path" : "pages/info/list",
+            "style" : {
+				"navigationBarTitleText":"news列表"
+			}
+        }
+        ,{
+            "path" : "pages/info/details",
+            "style" : {
+				"navigationBarTitleText":"news详情"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black", //导航栏标题颜色及状态栏前景颜色，仅支持black/while
+		"navigationBarTitleText": "uni-app",	//导航栏标题文字内容
+		"navigationBarBackgroundColor": "#F8F8F8", //导航栏背景颜色
+		"backgroundColor": "#F8F8F8" //窗口背景色
+	}
+}

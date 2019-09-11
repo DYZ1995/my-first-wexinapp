@@ -1,0 +1,1 @@
+<view class="content"><view class="title">{{title+"......"}}</view><view class="area-content"><rich-text nodes="{{newsContents}}"></rich-text></view></view>
